@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Edu+TAS+Beginner:wght@600&family=Ibarra+Real+Nova:ital,wght@1,500&family=Josefin+Sans&family=Poppins:wght@500&family=Trispace:wght@700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffff;
+}
+.conteinar{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.frist-sec{
+    display: flex;
+    width: 1321px;
+    height: 646px;
+    background-color: #161616;
+    border-radius: 30px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.blog-sec{
+    width: 530px;
+    height: 515px;
+    color: #ffff;
+}
+.taitel-text{
+    font-size: 70px;
+    font-weight: 700;
+}
+.blog-sec .btn{
+    background: #DD0000;
+    color: #ffff;
+    border-radius: 5px;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+.blog-sec .btn:hover{
+    background-color: #161616;
+    border: 1px solid rgba(128, 128, 128, 0.411);
+    color: #DD0000;
+}
+.image-sec img{
+    width: 581px;
+    height: 613px;
+    margin-top: 30px;
+}
