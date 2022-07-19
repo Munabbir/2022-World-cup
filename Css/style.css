@@ -44,3 +44,48 @@ body{
     height: 613px;
     margin-top: 30px;
 }
+
+
+.mach-item{
+    margin-top: 130px;
+}
+.mach-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+.mach-link{
+    width: 312px;
+    height: 362px;
+    box-shadow: 2px 2px 16px rgba(209, 206, 206, 0.432);
+    border-radius: 10px;
+    
+}
+.mach-taitel{
+    padding: 10px;
+}
+.btns{
+    background: #DD0000;
+    color: #ffff;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.btns:hover{
+    background-color: #fff;
+    border: 1px solid rgba(128, 128, 128, 0.411);
+    color: #DD0000;
+}
+a, .fa-clock, .fa-message{
+    text-decoration: none;
+    color: rgb(36, 35, 35);
+}
+.fa-clock{
+    padding: 5px;
+}
+.fa-message{
+    margin-left: 5px;
+    padding: 5px;
+}
