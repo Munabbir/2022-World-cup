@@ -1,10 +1,17 @@
+ 
+/*google font*/
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Edu+TAS+Beginner:wght@600&family=Ibarra+Real+Nova:ital,wght@1,500&family=Josefin+Sans&family=Poppins:wght@500&family=Trispace:wght@700&display=swap');
+/*google font end*/
+/*All body*/
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #ffff;
 }
+/*All body style end*/
+
+/*blog item*/
 .conteinar{
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -17,6 +24,10 @@ body{
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: flex-start;
+}
+.blogs-taitel{
+    width: 500px;
+    height: 400px;
 }
 .blog-sec{
     width: 530px;
@@ -44,10 +55,23 @@ body{
     height: 613px;
     margin-top: 30px;
 }
-
+/*blog item end*/
+/*mach item*/
 
 .mach-item{
     margin-top: 130px;
+}
+.mach-buttons{
+    width: 300px;
+    height: 200px;
+    background-color: #000;
+    border-radius: 10px;
+}
+.mach-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
 }
 .mach-links {
     display: grid;
@@ -61,6 +85,7 @@ body{
     border-radius: 10px;
     
 }
+
 .mach-taitel{
     padding: 10px;
 }
@@ -78,6 +103,25 @@ body{
     border: 1px solid rgba(128, 128, 128, 0.411);
     color: #000;
 }
+.adarsh-mach-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adarsh-link a button{
+    margin-top: 30px;
+    padding: 10px 30px;
+    background-color: #DD0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.adarsh-link a button:hover{
+    background-color: #000;
+    color: #DD0000;
+}
+
 a, .fa-clock, .fa-message{
     text-decoration: none;
     color: rgb(36, 35, 35);
@@ -89,7 +133,11 @@ a, .fa-clock, .fa-message{
     margin-left: 5px;
     padding: 5px;
 }
+/*mach item end*/
 
+
+
+/*footer section*/
 
 footer{
     width: 100%;
@@ -109,13 +157,164 @@ hr{
     border: solid 1px lightgrey;
     width: 80%;
 }
-
-.items{
-    margin-top: 25px;
+.footer-item {
+    display: grid;
+    margin-top: 135px;
 }
+
+.taitel {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.items {
+    margin-top: 50px;
+}
+
 .items a{
     color: rgb(161, 156, 156);
     padding: 15px;
 }
+
+/* social icon */
+
+.social-links {
+    margin-top: 60px;
+    font-size: 35px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+.social-links a{
+    color: #fff;
+    padding: 20px;
+}
+.fa-facebook, .fa-linkedin{
+    color: rgb(5, 128, 204);
+    
+}
+.fa-instagram{
+    color: rgb(247, 92, 92);
+}
+/*footer section end*/
+
+/*second HTML style*/
+.mach-libry {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+.mach-liv {
+    width: 300px;
+    height: 200px;
+    box-shadow: 2px 2px 16px rgba(73, 73, 73, 0.432);
+    border-radius: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+.flag-logo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+/*frist ces responsive*/
+
+/*Responsive media query mobail device */
+
+@media only screen and (max-width:688px){
+    .conteinar{
+        width: 100%;
+    }
+    .frist-sec{
+        flex-direction: column-reverse;
+    }
+  .image-sec img{
+    width: 300px;
+    height: 200px;
+    margin-left: 50%;
+  }
+  .blogs-taitel{
+    width: 5%;
+  }
+  .blog-sec{
+    margin-left: 5%;
+  }
+  .taitel-text, .para, .btn{
+    font-size: 20px;
+    margin-left: 22%;
+  }
+
+  /*frist ces responsive comlit*/
+
+  /*live mach section*/
+  .mach-links, .mach-libry{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /*live mach section complit*/
+
+
+  /*footer section*/
+  footer{
+    width: 100%;
+    height: 1000px;
+  }
+  .item, .social{
+    display: grid;
+  }
+  
+}
+/*Responsive media query mobail device complit*/
+
+/*Responsive media query tab device */
+@media only screen  and (min-width:688px) and (max-width:992px) {
+    .conteinar{
+        width: 100%;
+    }
+    .frist-sec{
+        flex-direction: column-reverse;
+    }
+  .image-sec img{
+    width: 300px;
+    height: 200px;
+    margin-left: 50%;
+  }
+  .blogs-taitel{
+    width: 5%;
+  }
+  .blog-sec{
+    margin-left: 5%;
+  }
+  .taitel-text, .para, .btn{
+    font-size: 20px;
+    margin-left: 22%;
+  }
+
+  /*frist ces responsive comlit*/
+
+  /*live mach section*/
+  .mach-links, .mach-libry{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /*live mach section complit*/
+
+
+  /*footer section*/
+  footer{
+    width: 100%;
+    height: 1000px;
+  }
+  .item, .social{
+    display: grid;
+  }
+}
+
+
 
  
